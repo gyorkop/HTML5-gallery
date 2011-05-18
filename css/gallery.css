@@ -1,0 +1,122 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #001B41;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 300;
+}
+
+nav button
+{
+    padding: 8px;
+    margin-left: 10px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #aaaaaa;
+    float: left;
+}
+
+nav h1
+{
+    float: left;
+    padding-left: 30px;
+    padding-top: 4px;
+    color: #eeeeee;
+}
+
+#surface
+{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+
+.picture
+{
+    position: absolute;
+    border: solid 10px white;
+    z-index: 1;
+}
+
+.animating
+{
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -moz-transform-duration: 0.5s;
+    -o-transform-duration: 0.5s;
+    -webkit-transform: translateZ(0);
+    transition-duration: 0.5s;
+}
+
+.rotate_right
+{
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    z-index: 2;
+}
+
+.rotate_left
+{
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    z-index: 2;
+}
+
+.opened
+{
+    z-index: 3;
+}
+
+.enlarged
+{
+    z-index: 5;
+    border: none;
+}
+
+.hidden
+{
+    display: none;
+}
+
+#prev_nav, #next_nav
+{
+    position: absolute;
+    width: 100px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 30px;
+    z-index: 7;
+}
+
+#prev_nav:hover, #next_nav:hover
+{
+    opacity: 1;
+}
+
+#prev_nav
+{
+    left: 0px;
+}
+
+#next_nav
+{
+    right: 0px;
+}
+
+.inactive_nav
+{
+    display: none;
+}
+
+.active_nav
+{
+    display: block;
+    opacity: 0.6;
+}

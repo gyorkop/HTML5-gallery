@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="css/gallery.css" type="text/css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:300">
+
+        <script type="text/javascript" src="scripts/gallery.js"></script>
+        <script type="text/javascript" src="scripts/album.js"></script>
+        <script type="text/javascript" src="scripts/picture.js"></script>
+        <script type="text/javascript">
+            window.addEventListener('load', function()
+            {
+                gallery.init(
+                {
+                    'thumbnail_size': 150,
+                    'thumbnail_padding': 30,
+                    'animation_duration': 500,
+                    'nav_bar_height': 70,
+                    'albums':
+                    {
+                        'Album 1':
+                        [
+                            'pictures/album_1/1.jpg',
+                            'pictures/album_1/2.jpg',
+                            'pictures/album_1/3.jpg',
+                            'pictures/album_1/4.jpg',
+                            'pictures/album_1/5.jpg',
+                            'pictures/album_1/6.jpg'
+                        ],
+                        'Album 2':
+                        [
+                            'pictures/album_2/1.jpg',
+                            'pictures/album_2/2.jpg',
+                            'pictures/album_2/3.jpg',
+                            'pictures/album_2/4.jpg',
+                            'pictures/album_2/5.jpg'
+                        ],
+                        'Album 3':
+                        [
+                            'pictures/album_3/1.jpg',
+                            'pictures/album_3/2.jpg',
+                            'pictures/album_3/3.jpg',
+                            'pictures/album_3/4.jpg',
+                            'pictures/album_3/5.jpg',
+                            'pictures/album_3/6.jpg'
+                        ]
+                    }
+                });
+            }, true);
+        </script>
+    </head>
+    <body>
+        <nav>
+            <button id="albums">Back to albums</button>
+            <h1 id="gallery_title">Albums<h1>
+        </nav>
+
+        <div id="prev_nav" class="inactive_nav">Prev</div>
+        <div id="next_nav" class="inactive_nav">Next</div>
+
+        <div id="surface"></div>
+        <div id="invisible" class="hidden"></div>
+    </body>
+</html>
