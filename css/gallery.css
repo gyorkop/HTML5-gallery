@@ -47,7 +47,6 @@ nav h1
 {
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
-    -moz-transform-duration: 0.5s;
     -o-transform-duration: 0.5s;
     -webkit-transform: translateZ(0);
     transition-duration: 0.5s;
