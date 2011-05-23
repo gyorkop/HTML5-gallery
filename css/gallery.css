@@ -11,14 +11,18 @@ body
     font-weight: 300;
 }
 
-nav button
+nav a
 {
+    display: inline-block;
+    padding: 5px;
+    background: #afa;
     padding: 8px;
     margin-left: 10px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     background-color: #aaaaaa;
     float: left;
+    color: #001B41;
 }
 
 nav h1
