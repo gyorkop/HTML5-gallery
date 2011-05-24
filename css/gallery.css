@@ -42,6 +42,12 @@ nav h1
     color: #eeeeee;
 }
 
+#files
+{
+    float: right;
+    color: #eeeeee;
+}
+
 #surface
 {
     position: absolute;

@@ -44,6 +44,16 @@ Gallery.prototype.init = function(settings)
     }, true);
 }
 
+Gallery.prototype.addAlbum = function(name, picture_srcs)
+{
+    this.showAlbums();
+
+    var last_album = this.albums[this.albums.length-1];
+    var sequence_num = last_album.sequence_num + 1;
+
+    this.albums.push(new Album(sequence_num, name, picture_srcs));
+}
+
 Gallery.prototype.detectWindowDimensions = function()
 {
     this.window_width = this.getWindowSize('Width');
